@@ -15,7 +15,7 @@ export default function Navbar() {
     <header style={{ position: 'sticky', top: 0, zIndex: 100, backdropFilter: 'blur(10px)', background: 'rgba(10,10,10,0.75)', borderBottom: '1px solid var(--line)' }}>
       <nav className="wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 72 }}>
         <NavLink to="/" style={{ fontFamily: 'var(--serif)', fontSize: 19, letterSpacing: '-0.01em' }} data-hover>
-          Nandhakishor<span style={{ color: 'var(--accent)' }}>.</span>
+          Nandhakishor<span style={{ color: 'var(--accent)' }}></span>
         </NavLink>
 
         <div className="nav-links" style={{ display: 'flex', gap: 36 }}>
