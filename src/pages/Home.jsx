@@ -20,9 +20,8 @@ export default function Home() {
         </Reveal>
         <Reveal delay={220}>
           <p style={{ maxWidth: 560, marginTop: 28, color: 'var(--ink-dim)', fontSize: 16 }}>
-            BCA graduate specialising in Python/Django and PHP/MySQL. I design and ship
-            end-to-end applications — from database schema to admin dashboards — and I'm
-            looking for a junior developer role to grow into.
+            I'm a Full stack developer currently building my skills in the MERN stack, with a focus on creating clean, responsive, and user-friendly web applications. I work with JavaScript, React, Node.js, Express, MongoDB, and Python, while continuously improving my programming and problem-solving skills.
+            I enjoy turning ideas into practical web experiences and learning new technologies through hands-on projects.
           </p>
         </Reveal>
         <Reveal delay={340}>
