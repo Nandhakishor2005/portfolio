@@ -1,12 +1,12 @@
 import Reveal from '../components/Reveal.jsx'
 
 const skillGroups = [
-  { label: 'Frontend', items: ['HTML', 'CSS', 'JavaScript (ES6)'] },
+  { label: 'Frontend', items: ['HTML5', 'CSS3', 'SCSS/SASS', 'JavaScript (ES6)'] },
   { label: 'Backend', items: ['Python', 'Django', 'PHP'] },
   { label: 'Databases', items: ['MySQL', 'SQLite'] },
-  { label: 'Languages', items: ['C', 'C++','Python'] },
-  { label: 'Tools', items: ['Git', 'GitHub', 'VS Code'] },
-  { label: 'Concepts', items: ['OOP', 'SDLC', 'Role-based Auth'] },
+  { label: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'PHP', 'SQL'] },
+  { label: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Vercel'] },
+  { label: 'Concepts', items: ['OOP', 'SDLC', 'Database Management System', 'Role-based Auth'] },
 ]
 
 const certifications = [
