@@ -1,4 +1,7 @@
 import Reveal from '../components/Reveal.jsx'
+import { Document, Page, pdfjs } from 'react-pdf'
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 const skillGroups = [
   { label: 'Frontend', items: ['HTML5', 'CSS3', 'SCSS/SASS', 'JavaScript (ES6)'] },
@@ -98,12 +101,12 @@ export default function About() {
                   <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)' }}>{c.title}</h2>
                 </div>
 
-                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', height: '540px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff' }}>
-                  <iframe 
-                    src={`${c.link}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`} 
-                    style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none' }} 
-                    title={c.title}
-                  ></iframe>
+                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff', display: 'flex', justifyContent: 'center' }}>
+                  <div style={{ width: '100%', pointerEvents: 'none' }}>
+                    <Document file={c.link} loading={<div style={{ padding: '60px', textAlign: 'center', color: '#888' }}>Loading certificate...</div>}>
+                      <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} width={800} />
+                    </Document>
+                  </div>
                 </div>
 
                 <p style={{ marginTop: 20, color: 'var(--ink-dim)', maxWidth: 640, fontSize: 15.5 }}>
@@ -117,6 +120,15 @@ export default function About() {
           ))}
         </div>
       </div>
+      
+      <style>{`
+        .react-pdf__Page__canvas {
+          max-width: 100% !important;
+          height: auto !important;
+          display: block;
+          margin: 0 auto;
+        }
+      `}</style>
     </div>
   )
 }
