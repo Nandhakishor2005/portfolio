@@ -16,21 +16,21 @@ const skillGroups = [
 ]
 
 const certifications = [
-  { 
-    title: 'Mastering HTML, CSS, SCSS, SASS, JS, TypeScript & Python', 
-    org: 'Udemy', 
+  {
+    title: 'Mastering HTML, CSS, SCSS, SASS, JS, TypeScript & Python',
+    org: 'Udemy',
     date: 'Mar 2025',
-    link: '/UC-56ce025e-eae0-46be-bb37-a92e150ac0f4.pdf' 
+    link: '/UC-56ce025e-eae0-46be-bb37-a92e150ac0f4.pdf'
   },
-  { 
-    title: 'Workshop on Java Full Stack', 
-    org: 'Spectrum Softtech Solutions Pvt. Ltd.', 
+  {
+    title: 'Workshop on Java Full Stack',
+    org: 'Spectrum Softtech Solutions Pvt. Ltd.',
     date: 'Feb 2026',
     link: '/Workshop_on_JAVA_Full_Stack_Certificate_Nandha_kishor__09022026043132.pdf'
   },
-  { 
-    title: 'Soft Skills Program — Communication, Interview Skills, Presentation, GD, Business & Email Etiquette', 
-    org: 'TCS iON, Tata Consultancy Services', 
+  {
+    title: 'Soft Skills Program — Communication, Interview Skills, Presentation, GD, Business & Email Etiquette',
+    org: 'TCS iON, Tata Consultancy Services',
     date: 'May 2026',
     link: '/Nandhakishor_SoftSkills_Certificate.pdf'
   },
@@ -104,7 +104,7 @@ export default function About() {
                   <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)' }}>{c.title}</h2>
                 </div>
 
-                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff', display: 'flex', justifyContent: 'center', boxShadow: 'var(--drop-shadow)', transition: 'box-shadow 0.4s ease, border-color 0.4s ease' }}>
+                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', background: '#fff', display: 'flex', justifyContent: 'center', boxShadow: 'var(--drop-shadow)', transition: 'box-shadow 0.4s ease, border-color 0.4s ease' }}>
                   <div style={{ width: '100%', pointerEvents: 'none' }}>
                     <Document file={c.link} loading={<div style={{ padding: '60px', textAlign: 'center', color: '#888' }}>Loading certificate...</div>}>
                       <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} width={800} />
@@ -123,7 +123,7 @@ export default function About() {
           ))}
         </div>
       </div>
-      
+
       <style>{`
         .react-pdf__Page__canvas {
           max-width: 100% !important;
