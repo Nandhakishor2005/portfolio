@@ -39,11 +39,14 @@ export default function Home() {
           </div>
           <div style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}>
             <Reveal delay={400}>
-              <img
-                src="/myImage.jpeg"
-                alt="Nandhakishor Professional Photo"
-                className="profile-img"
-              />
+              <div className="profile-wrapper">
+                <div className="profile-backdrop"></div>
+                <img
+                  src="/myImage.jpeg"
+                  alt="Nandhakishor Professional Photo"
+                  className="profile-photo"
+                />
+              </div>
             </Reveal>
           </div>
         </div>
