@@ -104,7 +104,7 @@ export default function About() {
                   <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)' }}>{c.title}</h2>
                 </div>
 
-                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff', display: 'flex', justifyContent: 'center', boxShadow: 'var(--drop-shadow)', transition: 'box-shadow 0.4s ease, border-color 0.4s ease' }}>
                   <div style={{ width: '100%', pointerEvents: 'none' }}>
                     <Document file={c.link} loading={<div style={{ padding: '60px', textAlign: 'center', color: '#888' }}>Loading certificate...</div>}>
                       <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} width={800} />
