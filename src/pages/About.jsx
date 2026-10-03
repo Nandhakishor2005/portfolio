@@ -1,7 +1,10 @@
 import Reveal from '../components/Reveal.jsx'
 import { Document, Page, pdfjs } from 'react-pdf'
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 const skillGroups = [
   { label: 'Frontend', items: ['HTML5', 'CSS3', 'SCSS/SASS', 'JavaScript (ES6)'] },
