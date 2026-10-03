@@ -1,6 +1,7 @@
 :root {
   --bg: #0a0a0a;
   --bg-soft: #111110;
+  --bg-alpha: rgba(10, 10, 10, 0.75);
   --ink: #ededE7;
   --ink-dim: #8a8a82;
   --line: #232320;
@@ -8,6 +9,21 @@
   --accent-dim: #7a2c10;
   --serif: 'Fraunces', serif;
   --mono: 'JetBrains Mono', monospace;
+}
+
+:root.light-mode {
+  --bg: #f8f9fa;
+  --bg-soft: #f1f3f5;
+  --bg-alpha: rgba(248, 249, 250, 0.75);
+  --ink: #212529;
+  --ink-dim: #495057;
+  --line: #dee2e6;
+  --accent: #ff5a1f;
+  --accent-dim: #ffcfbe;
+}
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
