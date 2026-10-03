@@ -101,7 +101,7 @@ export default function About() {
                 <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', height: '540px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff' }}>
                   <iframe 
                     src={`${c.link}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`} 
-                    style={{ width: '100%', height: '100%', border: 'none' }} 
+                    style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none' }} 
                     title={c.title}
                   ></iframe>
                 </div>
