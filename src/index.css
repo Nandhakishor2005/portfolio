@@ -120,5 +120,16 @@ button, a { cursor: none; }
 .proj-row:hover h3 { color: var(--accent); transform: translateX(8px); }
 .proj-row { transition: background 0.25s ease; }
 
+@media (max-width: 640px) {
+  .proj-row {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+  .proj-row h3 {
+    margin-left: 0 !important;
+  }
+}
+
 input::placeholder, textarea::placeholder { color: var(--ink-dim); }
 input:focus, textarea:focus { border-color: var(--accent); }

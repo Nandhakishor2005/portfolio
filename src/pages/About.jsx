@@ -10,9 +10,24 @@ const skillGroups = [
 ]
 
 const certifications = [
-  { title: 'Mastering HTML, CSS, SCSS, SASS, JS, TypeScript & Python', org: 'Udemy', date: 'Mar 2025' },
-  { title: 'Workshop on Java Full Stack', org: 'Spectrum Softtech Solutions Pvt. Ltd.', date: 'Feb 2026' },
-  { title: 'Soft Skills Program — Communication, Interview Skills, Presentation, GD, Business & Email Etiquette', org: 'TCS iON, Tata Consultancy Services', date: 'May 2026' },
+  { 
+    title: 'Mastering HTML, CSS, SCSS, SASS, JS, TypeScript & Python', 
+    org: 'Udemy', 
+    date: 'Mar 2025',
+    link: '/UC-56ce025e-eae0-46be-bb37-a92e150ac0f4.pdf' 
+  },
+  { 
+    title: 'Workshop on Java Full Stack', 
+    org: 'Spectrum Softtech Solutions Pvt. Ltd.', 
+    date: 'Feb 2026',
+    link: '/Workshop_on_JAVA_Full_Stack_Certificate_Nandha_kishor__09022026043132.pdf'
+  },
+  { 
+    title: 'Soft Skills Program — Communication, Interview Skills, Presentation, GD, Business & Email Etiquette', 
+    org: 'TCS iON, Tata Consultancy Services', 
+    date: 'May 2026',
+    link: '/Nandhakishor_SoftSkills_Certificate.pdf'
+  },
 ]
 
 export default function About() {
@@ -74,14 +89,30 @@ export default function About() {
       <Reveal delay={140}>
         <div style={{ marginTop: 80 }}>
           <span className="label">Certifications</span>
-          <div style={{ marginTop: 20, display: 'flex', flexDirection: 'column', gap: 20 }}>
+          <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 24 }}>
             {certifications.map((c) => (
-              <div key={c.title} style={{ display: 'flex', justifyContent: 'space-between', gap: 20, borderBottom: '1px solid var(--line)', paddingBottom: 18, flexWrap: 'wrap' }}>
-                <div style={{ maxWidth: 520 }}>
-                  <p style={{ fontSize: 14 }}>{c.title}</p>
-                  <p style={{ color: 'var(--ink-dim)', fontSize: 12.5, marginTop: 6 }}>{c.org}</p>
+              <div key={c.title} style={{ display: 'flex', gap: 24, borderBottom: '1px solid var(--line)', paddingBottom: 24, flexWrap: 'wrap', alignItems: 'center' }}>
+                {/* THUMBNAIL */}
+                <div style={{ width: '100px', height: '70px', background: 'var(--bg-soft)', border: '1px solid var(--line)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--ink-dim)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
                 </div>
-                <span style={{ color: 'var(--accent)', fontSize: 12, whiteSpace: 'nowrap' }}>{c.date}</span>
+
+                <div style={{ flex: 1, minWidth: '260px' }}>
+                  <p style={{ fontSize: 14.5, fontWeight: 500 }}>{c.title}</p>
+                  <p style={{ color: 'var(--ink-dim)', fontSize: 13, marginTop: 4 }}>{c.org}</p>
+                  <div style={{ display: 'flex', gap: 20, alignItems: 'center', marginTop: 14 }}>
+                    <span style={{ color: 'var(--accent)', fontSize: 12, whiteSpace: 'nowrap' }}>{c.date}</span>
+                    <a href={c.link} target="_blank" rel="noreferrer" data-hover style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 12, border: '1px solid var(--line)', padding: '4px 12px', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.04em', color: 'var(--ink)' }}>
+                      Live View ↗
+                    </a>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

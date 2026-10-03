@@ -8,32 +8,52 @@ export default function Home() {
     <div>
       {/* HERO */}
       <section className="wrap" style={{ paddingTop: '14vh', paddingBottom: '10vh' }}>
-        <Reveal>
-          <span className="label">Junior Full-Stack Developer</span>
-        </Reveal>
-        <Reveal delay={100}>
-          <h1 style={{ fontSize: 'clamp(40px, 8vw, 88px)', lineHeight: 1.02, marginTop: 18 }}>
-            Building role-based
-            <br />
-            web apps with <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>precision.</span>
-          </h1>
-        </Reveal>
-        <Reveal delay={220}>
-          <p style={{ maxWidth: 560, marginTop: 28, color: 'var(--ink-dim)', fontSize: 16 }}>
-            I'm a Full stack developer currently building my skills in the MERN stack, with a focus on creating clean, responsive, and user-friendly web applications. I work with JavaScript, React, Node.js, Express, MongoDB, and Python, while continuously improving my programming and problem-solving skills.
-            I enjoy turning ideas into practical web experiences and learning new technologies through hands-on projects.
-          </p>
-        </Reveal>
-        <Reveal delay={340}>
-          <div style={{ display: 'flex', gap: 16, marginTop: 40, flexWrap: 'wrap' }}>
-            <Link to="/work" data-hover style={{ border: '1px solid var(--ink)', padding: '14px 28px', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              View Work
-            </Link>
-            <a href="/Nandhakishor-Resume.pdf" download data-hover style={{ border: '1px solid var(--line)', padding: '14px 28px', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--ink-dim)' }}>
-              Download Resume ↓
-            </a>
+        <div style={{ display: 'flex', flexWrap: 'wrap-reverse', gap: '40px', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ flex: '1 1 400px' }}>
+            <Reveal>
+              <span className="label">Junior Full-Stack Developer</span>
+            </Reveal>
+            <Reveal delay={100}>
+              <h1 style={{ fontSize: 'clamp(40px, 8vw, 88px)', lineHeight: 1.02, marginTop: 18 }}>
+                Building role-based
+                <br />
+                web apps with <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>precision.</span>
+              </h1>
+            </Reveal>
+            <Reveal delay={220}>
+              <p style={{ maxWidth: 560, marginTop: 28, color: 'var(--ink-dim)', fontSize: 16 }}>
+                I'm a Full stack developer currently building my skills in the MERN stack, with a focus on creating clean, responsive, and user-friendly web applications. I work with JavaScript, React, Node.js, Express, MongoDB, and Python, while continuously improving my programming and problem-solving skills.
+                I enjoy turning ideas into practical web experiences and learning new technologies through hands-on projects.
+              </p>
+            </Reveal>
+            <Reveal delay={340}>
+              <div style={{ display: 'flex', gap: 16, marginTop: 40, flexWrap: 'wrap' }}>
+                <Link to="/work" data-hover style={{ border: '1px solid var(--ink)', padding: '14px 28px', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                  View Work
+                </Link>
+                <a href="/Nandhakishor_Resume.pdf" download data-hover style={{ border: '1px solid var(--line)', padding: '14px 28px', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--ink-dim)' }}>
+                  Download Resume ↓
+                </a>
+              </div>
+            </Reveal>
           </div>
-        </Reveal>
+          <div style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}>
+            <Reveal delay={400}>
+              <img
+                src="/myImage.jpeg"
+                alt="Nandhakishor Professional Photo"
+                style={{
+                  width: '100%',
+                  maxWidth: '380px',
+                  aspectRatio: '1',
+                  objectFit: 'cover',
+                  borderRadius: '24px',
+                  border: '1px solid var(--line)',
+                }}
+              />
+            </Reveal>
+          </div>
+        </div>
       </section>
 
       {/* MARQUEE */}

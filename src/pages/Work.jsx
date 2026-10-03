@@ -4,6 +4,7 @@ const projects = [
   {
     n: '01',
     title: 'Internship Platform',
+    img: '/Internship_Platform_screenshot.png',
     stack: ['Python', 'Django', 'SQLite', 'HTML', 'CSS', 'JavaScript', 'Git'],
     summary:
       'A 28-page, full-stack role-based web app connecting 3 user roles — students, employers, and admin — across 12 database tables in a single Django application.',
@@ -18,6 +19,7 @@ const projects = [
   {
     n: '02',
     title: 'Tourism Management System',
+    img: '/tourism_Management_Screenshot.jpeg',
     stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
     summary:
       'A 20-page tour booking platform across 10 database tables, letting users browse destinations, view packages, submit enquiries, and complete bookings with secure login.',
@@ -46,6 +48,12 @@ export default function Work() {
                 <span style={{ fontFamily: 'var(--mono)', color: 'var(--accent)', fontSize: 14 }}>{p.n}</span>
                 <h2 style={{ fontSize: 'clamp(28px, 5vw, 46px)' }}>{p.title}</h2>
               </div>
+
+              {p.img && (
+                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)' }}>
+                  <img src={p.img} alt={`${p.title} Screenshot`} style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+                </div>
+              )}
 
               <p style={{ marginTop: 20, color: 'var(--ink-dim)', maxWidth: 640, fontSize: 15.5 }}>{p.summary}</p>
 
