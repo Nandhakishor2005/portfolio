@@ -42,14 +42,7 @@ export default function Home() {
               <img
                 src="/myImage.jpeg"
                 alt="Nandhakishor Professional Photo"
-                style={{
-                  width: '100%',
-                  maxWidth: '380px',
-                  aspectRatio: '1',
-                  objectFit: 'cover',
-                  borderRadius: '24px',
-                  border: '1px solid var(--line)',
-                }}
+                className="profile-img"
               />
             </Reveal>
           </div>

@@ -133,3 +133,20 @@ button, a { cursor: none; }
 
 input::placeholder, textarea::placeholder { color: var(--ink-dim); }
 input:focus, textarea:focus { border-color: var(--accent); }
+
+.profile-img {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 32px;
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.4s ease;
+  filter: contrast(1.05) brightness(0.95);
+}
+.profile-img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border-color: var(--ink-dim);
+}

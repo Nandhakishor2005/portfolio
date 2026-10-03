@@ -56,7 +56,6 @@ export default function Contact() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 8 }}>
                 <a href="https://github.com/Nandhakishor2005" target="_blank" rel="noreferrer" data-hover style={{ fontSize: 14, color: 'var(--ink-dim)' }}>GitHub ↗</a>
                 <a href="https://linkedin.com/in/nandha-kishor" target="_blank" rel="noreferrer" data-hover style={{ fontSize: 14, color: 'var(--ink-dim)' }}>LinkedIn ↗</a>
-                <a href="https://hackerrank.com/nandhakishor" target="_blank" rel="noreferrer" data-hover style={{ fontSize: 14, color: 'var(--ink-dim)' }}>HackerRank ↗</a>
               </div>
             </div>
           </div>
