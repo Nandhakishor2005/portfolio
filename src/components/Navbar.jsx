@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { SunMedium, MoonStar } from 'lucide-react'
 
 const links = [
   { to: '/', label: 'Index' },
@@ -53,10 +54,12 @@ export default function Navbar() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <button 
             onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
-            style={{ background: 'var(--bg-soft)', border: '1px solid var(--line)', color: 'var(--ink)', padding: '6px 14px', borderRadius: '24px', cursor: 'none', fontSize: 13, display: 'flex', alignItems: 'center', gap: 6, transition: 'all 0.4s ease' }}
+            style={{ background: 'var(--bg-soft)', border: '1px solid var(--line)', color: 'var(--ink)', width: 38, height: 38, borderRadius: '50%', cursor: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.4s ease' }}
+            aria-label="Toggle Theme"
+            title="Toggle Theme"
             data-hover
           >
-            {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
+            {theme === 'dark' ? <SunMedium size={18} /> : <MoonStar size={18} />}
           </button>
           
           <button
