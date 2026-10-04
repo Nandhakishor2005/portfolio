@@ -48,10 +48,11 @@ export default function About() {
 
       <Reveal delay={100}>
         <p style={{ marginTop: 28, color: 'var(--ink-dim)', maxWidth: 640, fontSize: 15.5 }}>
-          I’m a MERN Stack Developer focused on building responsive, user-friendly, and practical web applications. 
-          I have hands-on experience developing full-stack projects using MongoDB, Express.js, React.js, Node.js, JavaScript, HTML, and CSS, along with a foundation in Python and Django. 
-          I’m familiar with the complete development process, from designing interfaces and implementing functionality to working with databases and deploying applications. 
-          I’m currently seeking a junior developer opportunity where I can contribute to real-world projects, strengthen my technical expertise, and grow as a professional developer.
+          I build web applications with a focus on practical functionality, clean interfaces, and reliable user experiences. 
+          My current focus is the MERN stack, where I work with React, Node.js, Express, and MongoDB, supported by experience with JavaScript, Python, Django, HTML, and CSS. 
+          Through hands-on projects, I’ve gained experience across frontend development, backend logic, database integration, and application deployment. 
+          I’m looking to begin my career in a junior development role where I can apply these skills, work on real-world products, and continue expanding my technical knowledge.
+
 
         </p>
       </Reveal>
