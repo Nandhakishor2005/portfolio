@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal.jsx'
 
-const skills = ['Python', 'Django', 'PHP', 'MySQL', 'JavaScript', 'TypeScript', 'SCSS', 'Git', 'SQLite', 'OOP']
+const skills = ['Python', 'Django', 'PHP', 'MySQL', 'JavaScript', 'GitHub', 'Vercel', 'Git', 'SQLite', 'OOP']
 
 export default function Home() {
   return (
