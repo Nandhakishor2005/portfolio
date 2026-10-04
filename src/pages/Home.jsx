@@ -22,7 +22,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={220}>
               <p style={{ maxWidth: 560, marginTop: 28, color: 'var(--ink-dim)', fontSize: 16 }}>
-                I’m a Full-Stack Developer building my expertise in the MERN stack, with a focus on creating clean, responsive, and user-friendly web applications. I work with JavaScript, React, Node.js, Express, MongoDB, and Python, while continuously strengthening my programming and problem-solving skills. I enjoy turning ideas into practical web solutions and gaining real-world experience through hands-on projects.
+                I’m a Junior Full-Stack Developer building my expertise in the MERN stack, with a focus on creating clean, responsive, and user-friendly web applications. I work with JavaScript, React, Node.js, Express, MongoDB, and Python, while continuously strengthening my programming and problem-solving skills. I enjoy turning ideas into practical web solutions and gaining real-world experience through hands-on projects.
 
               </p>
             </Reveal>
