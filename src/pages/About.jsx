@@ -48,12 +48,11 @@ export default function About() {
 
       <Reveal delay={100}>
         <p style={{ marginTop: 28, color: 'var(--ink-dim)', maxWidth: 640, fontSize: 15.5 }}>
-          I specialise in full-stack web development with hands-on experience building
-          role-based web applications using Python/Django, PHP/MySQL, and modern frontend
-          technologies including TypeScript and SCSS. I've delivered two end-to-end projects
-          covering requirements, design, development, and deployment — and I'm seeking a
-          junior developer role where I can contribute to product growth while deepening
-          industry experience.
+          I’m a MERN Stack Developer focused on building responsive, user-friendly, and practical web applications. 
+          I have hands-on experience developing full-stack projects using MongoDB, Express.js, React.js, Node.js, JavaScript, HTML, and CSS, along with a foundation in Python and Django. 
+          I’m familiar with the complete development process, from designing interfaces and implementing functionality to working with databases and deploying applications. 
+          I’m currently seeking a junior developer opportunity where I can contribute to real-world projects, strengthen my technical expertise, and grow as a professional developer.
+
         </p>
       </Reveal>
 
