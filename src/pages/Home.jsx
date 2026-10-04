@@ -9,7 +9,7 @@ export default function Home() {
       {/* HERO */}
       <section className="wrap" style={{ paddingTop: '14vh', paddingBottom: '10vh' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap-reverse', gap: '40px', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ flex: '1 1 400px' }}>
+          <div style={{ flex: '1 1 min(100%, 400px)' }}>
             <Reveal>
               <span className="label">Junior Full-Stack Developer</span>
             </Reveal>
@@ -37,7 +37,7 @@ export default function Home() {
               </div>
             </Reveal>
           </div>
-          <div style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}>
+          <div style={{ flex: '1 1 min(100%, 300px)', display: 'flex', justifyContent: 'center' }}>
             <Reveal delay={400}>
               <div className="profile-wrapper">
                 <div className="profile-backdrop"></div>
