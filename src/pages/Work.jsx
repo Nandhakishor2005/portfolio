@@ -50,8 +50,8 @@ export default function Work() {
               </div>
 
               {p.img && (
-                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)' }}>
-                  <img src={p.img} alt={`${p.title} Screenshot`} style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+                <div style={{ marginTop: 24, width: '100%', maxWidth: '800px', aspectRatio: '16/9', overflow: 'hidden', borderRadius: '16px', border: '1px solid var(--line)', background: 'var(--bg-soft)' }}>
+                  <img src={p.img} alt={`${p.title} Screenshot`} style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} />
                 </div>
               )}
 

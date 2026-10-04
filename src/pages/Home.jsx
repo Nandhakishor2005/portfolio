@@ -76,13 +76,13 @@ export default function Home() {
         <Reveal>
           <span className="label">Selected Work</span>
         </Reveal>
-        <div style={{ display: 'grid', gap: 1, marginTop: 24, background: 'var(--line)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', marginTop: 24, borderTop: '1px solid var(--line)' }}>
           {[
             { n: '01', title: 'Internship Platform', stack: 'Python · Django · SQLite', to: '/work' },
             { n: '02', title: 'Tourism Management System', stack: 'PHP · MySQL · JavaScript', to: '/work' },
           ].map((p, i) => (
             <Reveal delay={i * 120} key={p.n}>
-              <Link to={p.to} data-hover className="proj-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '32px 0', background: 'var(--bg)' }}>
+              <Link to={p.to} data-hover className="proj-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '32px 0', borderBottom: '1px solid var(--line)' }}>
                 <span style={{ fontFamily: 'var(--mono)', color: 'var(--ink-dim)', fontSize: 13 }}>{p.n}</span>
                 <h3 style={{ fontSize: 'clamp(24px, 4vw, 40px)', flex: 1, marginLeft: 32 }}>{p.title}</h3>
                 <span style={{ color: 'var(--ink-dim)', fontSize: 13 }}>{p.stack}</span>

@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Cursor from './components/Cursor.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 import Home from './pages/Home.jsx'
 import Work from './pages/Work.jsx'
 import About from './pages/About.jsx'
@@ -34,6 +35,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Cursor />
       <Navbar />
       <AnimatePresence mode="wait">
