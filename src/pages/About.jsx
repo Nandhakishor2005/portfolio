@@ -7,10 +7,10 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const skillGroups = [
-  { label: 'Frontend', items: ['HTML5', 'CSS3', 'SCSS/SASS', 'JavaScript (ES6)'] },
+  { label: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript (ES6)'] },
   { label: 'Backend', items: ['Python', 'Django', 'PHP'] },
   { label: 'Databases', items: ['MySQL', 'SQLite'] },
-  { label: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'PHP', 'SQL'] },
+  { label: 'Languages', items: ['Python', 'JavaScript', 'PHP', 'SQL'] },
   { label: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Vercel'] },
   { label: 'Concepts', items: ['OOP', 'SDLC', 'Database Management System', 'Role-based Auth'] },
 ]
@@ -40,7 +40,7 @@ export default function About() {
   return (
     <div className="wrap" style={{ paddingTop: '12vh', paddingBottom: '10vh' }}>
       <Reveal>
-        <span className="label">About</span>
+        <span className="label">About Me</span>
         <h1 style={{ fontSize: 'clamp(34px, 6vw, 58px)', marginTop: 16, maxWidth: 760 }}>
           BCA graduate, self-taught across the stack, obsessed with clean architecture.
         </h1>
